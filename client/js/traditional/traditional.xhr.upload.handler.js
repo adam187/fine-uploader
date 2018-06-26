@@ -185,7 +185,7 @@ qq.traditional.XhrUploadHandler = function(spec, proxy) {
                     qq.obj2FormData(params, formData);
                 }
 
-                formData.append(spec.inputName, fileOrBlob);
+                formData.append(spec.inputName, fileOrBlob, name);
                 return formData;
             }
 
